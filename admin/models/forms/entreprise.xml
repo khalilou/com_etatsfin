@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form
+	addrulepath="/administrator/components/com_etatsfin/models/rules"
+>
+	<fieldset name="details">
+		<field
+			name="id"
+			type="hidden"
+		/>
+		<field
+			name="raisonsociale"
+			type="text"
+			label="COM_ETATSFIN_ENTREPRISE_FIELD_RAISONSOCIALE_LABEL"
+			description="COM_ETATSFIN_ENTREPRISE_FIELD_RAISONSOCIALE_DESC"
+			size="40"
+			class="inputbox validate-raisonsociale"
+			validate="raisonsociale"
+			required="true"
+			default=""
+		/>
+		<field
+			name="date_creation"
+			type="calendar"
+			label="COM_ETATSFIN_ENTREPRISE_FIELD_DATECREATION_LABEL"
+			description="COM_ETATSFIN_ENTREPRISE_FIELD_DATECREATION_DESC"
+			size="40"
+			class="inputbox"
+			required="false"
+			default=""
+		/>
+		<field
+			name="registre_commerce"
+			type="text"
+			label="COM_ETATSFIN_ENTREPRISE_FIELD_REGISTRECOMMERCE_LABEL"
+			description="COM_ETATSFIN_ENTREPRISE_FIELD_REGISTRECOMMERCE_DESC"
+			size="40"
+			class="inputbox"
+			required="false"
+			default=""
+		/>
+		<field
+			name="adresse"
+			type="text"
+			label="COM_ETATSFIN_ENTREPRISE_FIELD_ADRESSE_LABEL"
+			description="COM_ETATSFIN_ENTREPRISE_FIELD_ADRESSE_DESC"
+			size="40"
+			class="inputbox"
+			required="false"
+			default=""
+		/>
+		
+	</fieldset>
+	<fields name="params">
+		<fieldset
+			name="params"
+			label="JGLOBAL_FIELDSET_DISPLAY_OPTIONS"
+		>
+		</fieldset>
+	</fields>
+</form>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form
+	addrulepath="/administrator/components/com_etatsfin/models/rules"
+>
+	<fieldset name="details">
+		<field
+			name="id"
+			type="hidden"
+		/>
+		<field
+			name="entreprise_id"
+			type="sql"
+			label="COM_ETATSFIN_BILAN_FIELD_ENTREPRISEID_LABEL"
+			query="SELECT id AS value, raisonsociale as entreprise_id FROM #__entreprise" 
+			description="COM_ETATSFIN_BILANS_FIELD_ENTREPRISEID_DESC"
+			size=""
+			class="inputbox"
+			validate=""
+			required="true"
+			default="1"
+		/>
+	<field
+			name="annee"
+			type="text"
+			label="COM_ETATSFIN_BILAN_FIELD_ANNEE_LABEL"
+			description="COM_ETATSFIN_BILANS_FIELD_ANNEE_DESC"
+			size="40"
+			class="inputbox"
+			validate=""
+			required="true"
+			default=""
+		/>
+		<field
+			name="periode"
+			type="list"
+			label="COM_ETATSFIN_BILAN_FIELD_PERIODE_LABEL"
+			description="COM_ETATSFIN_BILANS_FIELD_PERIODE_DESC"
+			class="inputbox"
+			validate=""
+			required="true"
+			default="1"
+		>
+			<option value="1">Etats financiers définitifs au 31/12</option>
+			
+			<option value="2">Etats financiers intermédiaires au 30/06</option>
+
+			<option value="3">Etats financiers provisoires au 31/12</option>
+
+			<option value="4">Etats financiers intermédiaires au 30/09</option>
+
+			<option value="5">Etats financiers intermédiaires au 31/03</option>
+
+			<option value="6">Etats financiers intermédiaires au 31/12</option>
+
+			<option value="7">Etats financiers consolidés au 31/12</option>
+
+			<option value="8">Etats financiers consolidés au 30/09</option>
+
+			<option value="9">Etats financiers définitifs au 30/09</option>
+
+			<option value="10">Etats financiers consolidés au 30/06</option>
+		</field>
+		<field
+			name="etat"
+			type="list"
+			extension="com_etatsfin"
+			label="COM_ETATSFIN_BILAN_FIELD_ETAT_LABEL"
+			description="COM_ETATSFIN_BILANS_FIELD_ETAT_DESC"
+			class="inputbox"
+			validate=""
+			required="true"
+			default="1"
+		>
+		<option value="1">Publié</option>
+		<option value="2">Non publié</option>
+		</field>
+	</fieldset>
+	<fields name="params">
+		<fieldset
+			name="params"
+			label="JGLOBAL_FIELDSET_DISPLAY_OPTIONS"
+		>
+		</fieldset>
+	</fields>
+</form>
